@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="google" content="notranslate">
-        <meta property="og:description" content="Clonegram è un social network dove gli utenti posso condividere i proprio ricordi con i loro amici">
+        <meta property="og:description" content="Clonegram è un social network dove gli utenti possono condividere i proprio ricordi con i loro amici">
         <meta property="og:title" content="Clonegram">	
         <meta property="og:image" content="/media/clonegram_logo.png">
         <meta property="og:image:url" content="/media/clonegram_logo.png">
@@ -11,7 +11,7 @@
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1619">
         <meta property="og:image:height" content="446">
-        <meta name="description" content="Clonegram è un social network dove gli utenti posso condividere i proprio ricordi con i loro amici">
+        <meta name="description" content="Clonegram è un social network dove gli utenti possono condividere i proprio ricordi con i loro amici">
         <meta name="keywords" content="Clonegram, Instagram, Social network">
         <meta name="author" content="Clonegram">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">

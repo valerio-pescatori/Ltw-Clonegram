@@ -11,7 +11,7 @@
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1619">
         <meta property="og:image:height" content="446">
-        <meta name="description" content="Clonegram è un social network dove gli utenti possono condividere i proprio ricordi con i loro amici">
+        <meta name="description" content="Clonegram è un social network dove gli utenti possono condividere i propri ricordi con i loro amici">
         <meta name="keywords" content="Clonegram, Instagram, Social network">
         <meta name="author" content="Clonegram">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">

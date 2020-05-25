@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+    padding-top: 100px;
+    background-color: #fafafa;
+    min-height:100%; 
+    position:relative;
+    padding-bottom: 12rem;
+    min-width: 340px;
+}
+
+html {
+    height: 100%
+    
+}
+
+:root {
+    --sapienza-red: #75151e;
+}
+
+.text-sapienza { color: var(--sapienza-red);}
+.text-sapienza:hover { color: var(--sapienza-red);}
+.bg-sapienza { background: var(--sapienza-red);}
+
+body.modal-open {
+    padding-right: 0 !important;
+}
+
+* {
+    font-family:  'Montserrat', sans-serif;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.gradient-bg-main {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.gradient-bg-el {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,33,33,1) 100%, rgba(252,176,69,1) 100%);
+}
+
+.small {
+    font-size: 0.875rem !important;
+}
+
+.small::placeholder {
+    font-size: 0.875rem !important;
+}
+
+.cursor-unset {
+    cursor: unset !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.square {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+  
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.opacity-0 {opacity: 0;}
+.opacity-1 {opacity: 0.1;}
+.opacity-2 {opacity: 0.2;}
+.opacity-3 {opacity: 0.3;}
+.opacity-4 {opacity: 0.4;}
+.opacity-5 {opacity: 0.5;}
+.opacity-6 {opacity: 0.6;}
+.opacity-7 {opacity: 0.7;}
+.opacity-8 {opacity: 0.8;}
+.opacity-9 {opacity: 0.9;}
+
+/* CSS aggiuntivo per i bordi */
+.border-dashed {border-style: dashed !important; }
+.border-sm {border-width: thin !important;}
+.border-md {border-width: medium !important;}
+.border-lg {border-width: thick !important;}
+
+/* notifica*/
+.foto-notifica {
+    width: 35px;
+}
+
+/* classi di larghezza in rem */
+.width-14 {width: 14rem;}
+.width-15 {width: 15rem;}
+.width-16 {width: 16rem;}
+.width-17 {width: 17rem;}
+.width-18 {width: 18rem;}
+.width-19 {width: 19rem;}
+.width-20 {width: 20rem;}
+.width-21 {width: 21rem;}
+
+/* text truncate customized */
+.text-truncate-custom {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* loading animation css */
+.loading-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    overflow: hidden;
+    background-color: #DDDBDD;
+}
+
+.loading-wrapper::after, .text-loading::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.5) 60%, rgba(255,255,255, 0) 100%);
+    animation: loadingAnimation 1s infinite;
+    content: '';
+    z-index: 12;
+}
+
+@keyframes loadingAnimation {
+    100% {
+        transform: translateX(100%);
+    }
+}

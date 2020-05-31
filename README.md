@@ -1,9 +1,7 @@
 # Ltw-Clonegram
 Clonegram è un social network dove gli utenti possono condividere i propri ricordi con i loro amici.
 Nasce da un progetto per il corso di [Linguaggi e Tecnologie per il Web](http://www.dis.uniroma1.it/rosati/lw/).
-
-# Indice
-    ----------------
+**Il sito è disponibile al seguente [link](161.35.27.71/).**
 
 ## Da chi è stato sviluppato?
 * [Eduardo Rinaldi](https://github.com/edu-rinaldi)
@@ -103,17 +101,17 @@ In questa sezione si può trovare una breve descrizione per i file principali ri
 * **`./app/application/controllers/UserContr.php`**: contiene metodi per visualizzare la pagina utente, dando informazioni riguardo l'utente loggato per permettere al front-end di gestire diversamente i casi della pagina dell'utente loggato e pagina di altri utenti. Contiene inoltre metodi per visualizzare la pagina di user settings e per aggiornare le informazioni dell'utente.
 
 ### Models
-* **`./app/application/models/Comment.php`**:
-* **`./app/application/models/Follow.php`**:
-* **`./app/application/models/Likes.php`**:
-* **`./app/application/models/Media.php`**:
-* **`./app/application/models/Notifications.php`**:
-* **`./app/application/models/Post.php`**:
-* **`./app/application/models/PostMedia.php`**:
-* **`./app/application/models/Tag.php`**:
-* **`./app/application/models/User.php`**:
+* **`./app/application/models/Comment.php`**: contiene query relative ai Commenti
+* **`./app/application/models/Follow.php`**: contiene query relative alle richieste/stato di Follow
+* **`./app/application/models/Likes.php`**: contiene query relative ai Like
+* **`./app/application/models/Media.php`**: contiene query relative ai Media
+* **`./app/application/models/Notifications.php`**: contiene query relative alle Notifiche
+* **`./app/application/models/Post.php`**: contiene query relative ai commenti
+* **`./app/application/models/PostMedia.php`**: contiene query relative alla tabella PostMedia
+* **`./app/application/models/Tag.php`**: contiene query relative ai Tag
+* **`./app/application/models/User.php`**: contiene query relative ai User
 
 ### Libraries
 * **`./app/application/libraries/JwtAut.php`**: contiene le funzioni necessarie all'autenticazione e creazione di un json-web-token nella fase di login e navigazione tra pagine
 * **`./app/application/libraries/LoginValidator.php`**: contiene le funzioni necessarie a validare l'utente durante una richiesta HTTP
-* **`./app/application/libraries/UploadManager.php`**: contiene le funzioni necessarie al
+* **`./app/application/libraries/UploadManager.php`**: contiene le funzioni necessarie a caricare e/o croppare immagini e video

@@ -1,20 +1,39 @@
 # Ltw-Clonegram
 Clonegram è un social network dove gli utenti possono condividere i propri ricordi con i loro amici.
 Nasce da un progetto per il corso di [Linguaggi e Tecnologie per il Web](http://www.dis.uniroma1.it/rosati/lw/).
-**Il sito è disponibile al seguente [link](161.35.27.71/).**
+
 
 ## Da chi è stato sviluppato?
 * [Eduardo Rinaldi](https://github.com/edu-rinaldi)
 * [Gianmarco Picarella](https://github.com/gianmarcopicarella)
 * [Valerio Pescatori](https://github.com/valerio-pescatori)
 
+
 ## Docker Setup
-Il setup locale del progetto è molto semplice ed è basato su [docker](https://www.docker.com/). Dopo aver scaricato ed installato Docker ed aver estratto il pacchetto contente il progetto, è possibile runnarlo seguendo gli step qui di seguito:
-1. ```cd path/to/dir```
-2. ```docker-compose up -d```
-3. Una volta scaricate le Docker images necessarie, sarà possibile visionare l'applicazione al [seguente indirizzo](http://localhost:80)
+Il setup locale del progetto è molto semplice ed è basato su [docker](https://www.docker.com/). Dopo aver scaricato ed installato Docker ed aver estratto il pacchetto contente il progetto, è possibile runnarlo. Basta aprire una shell, posizionarsi nella cartella `Ltw-Clonegram` ed eseguire il seguente comando:
+
+```docker-compose up -d```
+
+Una volta scaricate le Docker images necessarie, sarà possibile utilizzare l'applicazione al [seguente indirizzo](http://localhost/)
 
 É possibile modificare le settings del compose tramite il file **`./docker-compose.yml`**. 
+
+# **UPDATE 12/04/2022**
+## Per gli utenti Windows
+In seguito all'introduzione di WSL2 come back-end per Docker Desktop è sorto un problema relativo al valore della variabile `lower_case_table_names` di MySQL, è quindi necessario per il corretto funzionamento dell'applicazione eseguire i seguenti step:
+1. Aprire una shell con permessi di amministratore e posizionarsi nella cartella `Ltw-Clonegram/db`
+2. Eseguire il comando `fsutil file setCaseSensitiveInfo ./ enable`
+
+[credits](https://github.com/docker/for-win/issues/12384#issuecomment-972845031)
+
+## Per gli utenti Linux
+Alla registrazione e alla creazione della sessione dopo il login vengono create alcue cartelle e files, per evitare errori relativi ai permessi è necessario modificare i permessi della cartella `./app` e delle sottocartelle tramite i seguenti step:
+1. Aprire una shell e posizionarsi nella cartella `Ltw-Clonegram/`
+2. Eseguire il comando `sudo chmod -R 777 app`
+
+Grazie a @StefanoM99 per il contributo
+
+___
 
 # Front-end 
 Il Frontend è diviso in 3 cartelle:

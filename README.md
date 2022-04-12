@@ -33,7 +33,7 @@ Alla registrazione e alla creazione della sessione dopo il login vengono create 
 1. Aprire una shell e posizionarsi nella cartella `Ltw-Clonegram/`
 2. Eseguire il comando `sudo chmod -R 777 app`
 
-Grazie a @StefanoM99 per il contributo
+Grazie a [@StefanoM99](https://github.com/StefanoM99) per il contributo
 
 ___
 

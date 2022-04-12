@@ -17,7 +17,8 @@ Il setup locale del progetto è molto semplice ed è basato su [docker](https://
 Una volta scaricate le Docker images necessarie, sarà possibile utilizzare l'applicazione al [seguente indirizzo](http://localhost/)
 
 É possibile modificare le settings del compose tramite il file **`./docker-compose.yml`**. 
-P.S.: Le immagini dei profili e dei post già esistenti non verranno renderizzate poiché non sono salvate nella repo, tuttavia le immagini che verranno caricate da voi funzioneranno correttamente.
+
+**P.S.: Le immagini dei profili e dei post già esistenti non verranno renderizzate poiché non sono salvate nella repo, tuttavia le immagini che verranno caricate da voi funzioneranno correttamente.**
 
 # **UPDATE 12/04/2022**
 ## Per gli utenti Windows
